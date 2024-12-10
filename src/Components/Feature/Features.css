@@ -1,0 +1,27 @@
+.features {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .features h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .features-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* justify-content: space-around; */
+    gap: 20px;
+  }
+  
+  .feature-item {
+    gap: 20px;
+    width: 90%;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

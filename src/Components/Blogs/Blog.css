@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #444;
+    font-weight: bold;
+  }
+  
+  .posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Post Card Styles */
+  .post-card {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .post-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 16px;
+  }
+  
+  .post-body {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 16px 16px;
+    line-height: 1.6;
+  }
+  
+  /* Loading and Error States */
+  .loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 50px;
+  }
+  
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+  }
+  
+  .pagination-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination-button:disabled {
+    background-color: #d0d0d0;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  .page-info {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .post-title {
+      font-size: 1.3rem;
+    }
+  
+    .post-body {
+      font-size: 0.95rem;
+    }
+  
+    .pagination-button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+
+  
